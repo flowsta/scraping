@@ -1,3 +1,107 @@
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline1">Necesidades técnicas</a></li>
+<li><a href="#orgheadline16">La Web como fuente de datos</a>
+<ul>
+<li><a href="#orgheadline2">Recopilar datos</a></li>
+<li><a href="#orgheadline3">Búsqueda avanzada</a></li>
+<li><a href="#orgheadline4">Ejemplo con operador <code>site:</code> de Google</a></li>
+<li><a href="#orgheadline5">Operador lógico <i>AND</i></a></li>
+<li><a href="#orgheadline6">Operador lógico <i>OR</i></a></li>
+<li><a href="#orgheadline7">Palabras reservadas</a></li>
+<li><a href="#orgheadline8">Búsqueda literal</a></li>
+<li><a href="#orgheadline9">Operador menos</a></li>
+<li><a href="#orgheadline10">Operador comodín</a></li>
+<li><a href="#orgheadline11">Debemos saber que</a></li>
+<li><a href="#orgheadline12">Resumen operadores lógicos</a></li>
+<li><a href="#orgheadline13">Operadores de tipos de archivo</a></li>
+<li><a href="#orgheadline14">Operadores de búsqueda</a></li>
+<li><a href="#orgheadline15">Desafíos</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline23">Otras utilidades</a>
+<ul>
+<li><a href="#orgheadline17">Bit.ly</a></li>
+<li><a href="#orgheadline18">Twitter</a></li>
+<li><a href="#orgheadline19">La máquina del tiempo de archive.org</a></li>
+<li><a href="#orgheadline20">Código fuente HTML</a></li>
+<li><a href="#orgheadline21">TinEye</a></li>
+<li><a href="#orgheadline22">Otras</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline30">Outwit Hub</a>
+<ul>
+<li><a href="#orgheadline24">Conceptos Outwit</a></li>
+<li><a href="#orgheadline25">Vistas Outwit</a></li>
+<li><a href="#orgheadline26">Filtros Outwit</a></li>
+<li><a href="#orgheadline27">Navegación Outwit</a></li>
+<li><a href="#orgheadline28">Resultados</a></li>
+<li><a href="#orgheadline29">Enlaces Outwit</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline31">Import.io</a></li>
+<li><a href="#orgheadline32">Kimonolabs</a></li>
+<li><a href="#orgheadline35">Inspección técnica de HTML</a>
+<ul>
+<li><a href="#orgheadline33">Firebug</a></li>
+<li><a href="#orgheadline34">Consola</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline40">Google Drive</a>
+<ul>
+<li><a href="#orgheadline36">ImportHTML()</a></li>
+<li><a href="#orgheadline37">ImportXML</a></li>
+<li><a href="#orgheadline38">Algunos ejemplos XPath útiles:</a></li>
+<li><a href="#orgheadline39">Ejemplo complejo</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline58">PDF</a>
+<ul>
+<li><a href="#orgheadline41">Interroga a un <i>PDF</i></a></li>
+<li><a href="#orgheadline42">Colaboración</a></li>
+<li><a href="#orgheadline43">Crowdcrafting: PDF Transcribe</a></li>
+<li><a href="#orgheadline44">Probar, probar, probar</a></li>
+<li><a href="#orgheadline46">pdftotext, xpdf</a>
+<ul>
+<li><a href="#orgheadline45">Opciones</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline47">Ghostscript</a></li>
+<li><a href="#orgheadline50">PDFtk</a>
+<ul>
+<li><a href="#orgheadline48">Rotar documentos</a></li>
+<li><a href="#orgheadline49">Dividir un PDF en varios</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline51">ImageMagick</a></li>
+<li><a href="#orgheadline52">Poppler-utils</a></li>
+<li><a href="#orgheadline53">Rmagick</a></li>
+<li><a href="#orgheadline54">PDF Split and Merge</a></li>
+<li><a href="#orgheadline55">Herramientas Web</a></li>
+<li><a href="#orgheadline56">Tika</a></li>
+<li><a href="#orgheadline57">Good Tables</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline61">Un caso singular: ProPublica</a>
+<ul>
+<li><a href="#orgheadline59">El proceso</a></li>
+<li><a href="#orgheadline60">PDFTables</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline64">OCR</a>
+<ul>
+<li><a href="#orgheadline62">Google Drive</a></li>
+<li><a href="#orgheadline63">Tesseract-ocr</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline65">Referencias bibliográficas&#xa0;&#xa0;&#xa0;<span class="tag"><span class="OK">OK</span></span></a></li>
+<li><a href="#orgheadline66">Manuales</a></li>
+</ul>
+</div>
+</div>
+
 Módulo de periodismo de datos de *scraping* donde aprenderemos cosas directamente relacionadas:
 
 -   Web *scraping*
@@ -15,7 +119,7 @@ Pero también otras cuestiones directamente relacionadas como:
 -   Tecnologías web
 -   Empezar a practicar con lenguajes de programación
 
-# Necesidades técnicas
+# Necesidades técnicas<a id="orgheadline1"></a>
 
 -   Navegadores [Firefox](http://getfirefox.com/) (o derivados) y [Chrome](https://www.google.es/chrome/browser/desktop/) (o derivados)
 -   Editor de textos con indentado y resaltado de sintaxis, [elige el que más te guste](http://infotics.es/2015/11/11/editor-de-textos/)
@@ -27,14 +131,14 @@ Pero también otras cuestiones directamente relacionadas como:
 -   La terminal, también es posible desde Windows con [cygwin](https://www.cygwin.com/)
 -   Python, Ruby y R
 
-# La Web como fuente de datos
+# La Web como fuente de datos<a id="orgheadline16"></a>
 
 -   La web es un fuente de datos inagotable
 -   De hecho, se puede considerar una gran base de datos.
 -   Se puede acceder a servicios web anónimos, con perfiles, buscadores generales y específicos.
 -   El buscador es un software que recopila e indexa archivos almacenados en servidores web y recupera la información conforme a algunos criterios específicos.
 
-## Recopilar datos
+## Recopilar datos<a id="orgheadline2"></a>
 
 -   La manera más sencilla de extraer datos de una página web consiste en seleccionar el texto, copiarlo y pegarlo allí donde queremos luego trabajar con ello.
 -   Si se tratan de datos que se encuentran dispuestos en tablas, los podemos copiar y pegar en nuestra aplicación de hoja de cálculo favorito.
@@ -44,26 +148,30 @@ Pero también otras cuestiones directamente relacionadas como:
 -   Se habla de recopilación de datos, *crawling* o *spiding* cuando nos descargamos sitios completos.
 -   Se habla de *scraping* cuando rascas de aquí y de allá.
 
-## Búsqueda avanzada
+## Búsqueda avanzada<a id="orgheadline3"></a>
 
 -   Se puede utilizar búsqueda avanzada en los principales buscadores
 -   *Google*, *Yahoo!*, *duckduckgo*, *Yandex* o *Bing*
 -   También están los [operadores de búsqueda](https://support.google.com/websearch/answer/2466433): permiten filtrar las búsquedas.
 -   Un listado no oficial lo encontrais en [googleguide](http://www.googleguide.com/advanced_operators_reference.html)
 
-## Ejemplo con operador `site:` de Google
+## Ejemplo con operador `site:` de Google<a id="orgheadline4"></a>
 
--   Los operadores de búsqueda nos permiten acotar y especificar más los resultados.
--   Se puede buscar una palabra específica en un dominio concreto con `site:dominio`
--   Por ejemplo, busquemos la palabra **inmigración** en el sitio de [elpais.com](https://www.google.es/?gfe_rd=cr&ei=QVl-VoOmOtGp8weIvqSwBg#q=site:elpais.com+inmigraci%25C3%25B3n)
+Los operadores de búsqueda nos permiten acotar y especificar más los resultados.
+
+Se puede buscar una palabra específica en un dominio concreto con `site:dominio`
+
+Por ejemplo, busquemos la palabra **inmigración** en el sitio de [elpais.com](https://www.google.es/?gfe_rd=cr&ei=QVl-VoOmOtGp8weIvqSwBg#q=site:elpais.com+inmigraci%25C3%25B3n)
 
     site:elpais.com inmigración
 
--   La búsqueda devuelve 55200 resultados.
--   El resultado no varía en función de nuestro perfil o nuestra navegación ya que es sobre un sitio concreto.
--   Sí que puede variar desde que he realizado la búsqueda hasta que lo buscáis.
+La búsqueda devuelve 55200 resultados.
 
-## Operador lógico *AND*
+El resultado no varía en función de nuestro perfil o nuestra navegación ya que es sobre un sitio concreto.
+
+Sí que puede variar desde que he realizado la búsqueda hasta que lo buscáis.
+
+## Operador lógico *AND*<a id="orgheadline5"></a>
 
 -   Cuando buscamos una palabra buscamos unos caracteres escritos de esa manera determinada.
 -   Si buscamos más de una palabra, comienzan a actuar operadores lógicos.
@@ -75,7 +183,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
     site:elpais.com inmigración ilegal
 
-## Operador lógico *OR*
+## Operador lógico *OR*<a id="orgheadline6"></a>
 
 -   Otro operador muy utilizado es `OR`, `O` o `|`
 -   En Google se utilizan `OR` y `|`
@@ -84,7 +192,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
     site:elpais.com inmigración OR ilegal
 
-## Palabras reservadas
+## Palabras reservadas<a id="orgheadline7"></a>
 
 -   Los operadores lógicos nos introducen en el concepto de las *palabras reservadas*.
 -   Las palabras reservadas se dan en todos los lenguajes informáticos y son palabras que utiliza el propio lenguaje.
@@ -96,7 +204,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
 -   Lo cual buscará documentos donde aparezcan las tres palabras: `spain`, `or` y `greece`
 
-## Búsqueda literal
+## Búsqueda literal<a id="orgheadline8"></a>
 
 -   La búsqueda literal sirve para encontrar expresiones específicas.
 -   Los literales se denominan también en programación *strings* o *cadenas de caracteres*.
@@ -105,7 +213,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
     site:elpais.com "violencia de género" madrid
 
-## Operador menos
+## Operador menos<a id="orgheadline9"></a>
 
 -   Si el operador `+` se utiliza como sinónimo de `OR`, el operador menos reduce los resultados de la búsqueda.
 -   Con el operador `-` elegimos palabras que no queremos que aparezcan acompañadas de otras.
@@ -119,7 +227,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
     "violencia de género en españa" -site:wikipedia.org
 
-## Operador comodín
+## Operador comodín<a id="orgheadline10"></a>
 
 -   El asterisco encuentra cualquier cosa en medio de una cadena de caracteres.
 -   Si queremos buscar *violencia de género*, *violencia a las mujeres* y *violencia contra las mujeres*, podemos emplear el operador el operador `|`
@@ -130,7 +238,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
     site:elpais.com "violencia * mujeres|género"
 
-## Debemos saber que
+## Debemos saber que<a id="orgheadline11"></a>
 
 -   Las búsquedas en estos buscadores no son *case sensitive*, es decir, no distinguen entre minúsculas y mayúsculas.
 -   Si buscamos "violencia de género" obtendremos los mismo resultados que si buscamos "VIOLENCIA DE GÉNERO"
@@ -139,7 +247,7 @@ Pero también otras cuestiones directamente relacionadas como:
 -   Para utilizar palabras reservadas en la búsqueda debemos entrecomillarlas.
 -   Las comillas también se utilizan para buscar literales, expresiones exactas.
 
-## Resumen operadores lógicos
+## Resumen operadores lógicos<a id="orgheadline12"></a>
 
 -   El operador de restricción `+`, es similar a `AND`
 -   El operador de restricción `-`, es similar a `NOT` en otros tipos de búsqueda.
@@ -149,7 +257,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
 <http://www.google.com/advanced_search>
 
-## Operadores de tipos de archivo
+## Operadores de tipos de archivo<a id="orgheadline13"></a>
 
 -   Otro operador de búsqueda de google es el operador de tipos de archivo.
 -   Se puede buscar documentos que estén en un determinado formato de archivo en un sitio determinado
@@ -164,7 +272,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
     filetype:csv site:ine.es "violencia de género"
 
-## Operadores de búsqueda
+## Operadores de búsqueda<a id="orgheadline14"></a>
 
 -   El listado completo de [operadores de búsqueda disponibles](https://support.google.com/websearch/answer/2466433?hl%3Den).
 -   `link:`, encuentra páginas que enlazan a cierta página.
@@ -180,7 +288,7 @@ Pero también otras cuestiones directamente relacionadas como:
 
 Example: cache:washington.edu
 
-## Desafíos
+## Desafíos<a id="orgheadline15"></a>
 
 -   Busca patrones en la información, los datos o la estructura de las páginas:
 
@@ -196,7 +304,7 @@ Example: cache:washington.edu
 
 <http://www.bbc.co.uk/food/recipes/>
 
-# Otras utilidades
+# Otras utilidades<a id="orgheadline23"></a>
 
 Veremos algunas utilidades que nos pueden ayudar de una u otra manera:
 
@@ -208,35 +316,35 @@ Veremos algunas utilidades que nos pueden ayudar de una u otra manera:
 -   *TinEye*
 -   Otras: *Readability*, *Downthemall*.
 
-## Bit.ly
+## Bit.ly<a id="orgheadline17"></a>
 
 -   El servicio de *urls* cortas nos puede ayudar a saber cuántas veces se ha compartido un determinado enlace.
 -   Tenemos que ir a <http://bit.ly> e introducir la *URL* que nos interesa.
 -   Si ya se ha utilizado, aparecerá una *URL* corta y podremos ver esa información escribiendo la URL seguida del símbolo `+`.
 -   Así vemos las estadísticas completas de la página, da una idea de lo popular que era la página y de lo que fue utilizado por las redes sociales como *Twitter* o *Facebook*.
 
-## Twitter
+## Twitter<a id="orgheadline18"></a>
 
 -   Con *Twitter* hacemos algo parecido a *Bit.ly*
 -   No vamos a poder disfrutar del mismo nivel de estadísticas.
 -   Se trata de buscar en el buscador de Twitter un enlace que nos interese y mostrará las últimas veces que se ha compartido.
 -   No guarda un histórico de todo el tiempo.
 
-## La máquina del tiempo de archive.org
+## La máquina del tiempo de archive.org<a id="orgheadline19"></a>
 
 -   La herramientas [Wayback Machine](http://archive.org/web/web.php) de [Internet Archive](http://www.archive.org) guarda pantallazos periódicos de las webs
 -   456 mil millones de páginas en total que puedes consultar desde su buscador.
 -   Una vez encontrada esa página, ese dominio, podemos ver en una línea de tiempo los distintos instantes que ha guardado la máquina y ver qué aspecto tenía.
 -   No guarda muchas imágenes o estilos, por cuestiones de espacio, pero nos puede dar alguna sorpresa.
 
-## Código fuente HTML
+## Código fuente HTML<a id="orgheadline20"></a>
 
 -   A menudo en el código fuente los programadores han realizado comentarios o han ocultado algo que podía estar en otro momento y que ahora no conviene.
 -   No hace falta saber de *HTML* pero sí que hay que saber dónde buscar.
 -   Los comentarios, contenido que el navegador no muestra, se encuentran entre los signos de `<!--` apertura de comentario y `-->` cierre de comentario.
 -   Por ejemplo, en la página de [The Guardian](http://theguardian.co.uk) ahora ponen que están contratando programadores.
 
-## TinEye
+## TinEye<a id="orgheadline21"></a>
 
 -   TinEye permite controlar el uso de las imágenes en un sitio web
 -   Nos pueda dar pistas sobre el origen, la fuente, otros usos de esa imagen&#x2026;
@@ -246,19 +354,19 @@ Veremos algunas utilidades que nos pueden ayudar de una u otra manera:
 -   Tiene extensiones para Firefox, Opera, Chrome o Safari. <http://www.tineye.com>
 -   Ejemplo: <https://www.tineye.com/search/1dc12635c9e2e21a53002ef0ce9ac0e458d59492/>
 
-## Otras
+## Otras<a id="orgheadline22"></a>
 
 -   [Readability](http://www.readability.com), servicio web que ayuda a extraer texto de la página web. Dispone de extensión para Firefox.
 -   [DownThemAll](http://www.downthemall.net/), extensión que permite la descarga de varios archivos a la vez.
 
-# Outwit Hub
+# Outwit Hub<a id="orgheadline30"></a>
 
 -   Outwit Hub, software y extensión para el navegador que contiene varias utilidades de reconocimiento y extracción de contenidos web y de organizar las colecciones de datos.
 -   Busca automáticamente a través de páginas.
 -   La primera vista en el marco de la izquierda es `Página`, mientras que los otros objetos son: `links`, `images`, `data`
 -   OutWit considera la página web como elementos de datos, por lo que si nos ponemos sobre el objeto `images`, seleccionaremos todas las imágenes.
 
-## Conceptos Outwit
+## Conceptos Outwit<a id="orgheadline24"></a>
 
 Hay tres conceptos en OutWit Hub:
 
@@ -266,7 +374,7 @@ Hay tres conceptos en OutWit Hub:
 2.  Podemos filtrar la información por cada tipo de datos y recogerla en nuestra cesta.
 3.  Puedes navegar a lo largo de varias páginas con el botón de paginación.
 
-## Vistas Outwit
+## Vistas Outwit<a id="orgheadline25"></a>
 
 Las vistas que muestra *OutWit* son:
 
@@ -281,7 +389,7 @@ Las vistas que muestra *OutWit* son:
 -   *Scraper*, aplica un escrapeador previamente cargado a la página.
 -   *Source*, muestra el HTML de la página.
 
-## Filtros Outwit
+## Filtros Outwit<a id="orgheadline26"></a>
 
 Los filtros de control de los que dispone:
 
@@ -292,7 +400,7 @@ Los filtros de control de los que dispone:
 -   *Style*, si se marca se ocultarán las imágenes que no vengan de CSS.
 -   Background, muestra las imágenes utilizadas como fondo si está marcada.
 
-## Navegación Outwit
+## Navegación Outwit<a id="orgheadline27"></a>
 
 Cuando hay más de una página que cargar, cuenta con algunas opciones:
 
@@ -302,20 +410,20 @@ Cuando hay más de una página que cargar, cuenta con algunas opciones:
 -   *Site Home*, carga la página principal del sitio.
 -   *Slideshow*, muestra las imágenes de la página como un carrusel.
 
-## Resultados
+## Resultados<a id="orgheadline28"></a>
 
 -   Los datos se pueden exportar a CSV, TSV, HTML, XLS o crear scripts SQL para guardarlos en bases de datos.
 -   En la versión de pago también se pueden programar tareas.
 -   Se suele adoptar como estándar de tiempo entre petición y petición la de 2 segundos de retraso.
 -   Si nos encontramos con contenido generado dinámicamente a través de javascript, será mejor que recopilemos los datos manualmente o que aprendemos otra técnica.
 
-## Enlaces Outwit
+## Enlaces Outwit<a id="orgheadline29"></a>
 
 -   Extensión, <http://www.outwit.com/products/hub/license.php>
 -   Add-on Firefox, <https://addons.mozilla.org/en-US/firefox/addon/outwit-hub/>
 -   Vídeo, <https://www.youtube.com/watch?v=ffoXpBlHZpo>
 
-# Import.io
+# Import.io<a id="orgheadline31"></a>
 
 -   Import.io es una herramienta para la extracción de datos de páginas web.
 -   No se necesita ningún aprendizaje de lenguajes de programación.
@@ -330,7 +438,7 @@ Cuando hay más de una página que cargar, cuenta con algunas opciones:
     -   Si queremos descargarnos los datos para jugar con ellos, *Download CSV*
     -   Pero también podemos crear una *API*, si estamos registrados.
 
-# Kimonolabs
+# Kimonolabs<a id="orgheadline32"></a>
 
 -   Herramienta de *scraping* que convierte web en API.
 -   Se utiliza como [extensión](https://chrome.google.com/webstore/detail/kimono/deoaddaobnieaecelinfdllcgdehimih?hl%3Des%0A) en Chrome/Chromium o atajo a los marcadores en Firefox.
@@ -338,7 +446,7 @@ Cuando hay más de una página que cargar, cuenta con algunas opciones:
 -   Una de las características de Kimono y que lo hacen muy atractivo es el hecho de crear una API sobre la base de cualquier web.
 -   La *API* nos ofrece una forma de interactuar con el contenido de esa web de forma automática, por lo que podemos crear nuestra propia web o aplicación con nuestro propio *HTML*, *CSS* y/o *JavaScript* y poner el contenido de esa *API*, normalmente en formato *JSON*.
 
-# Inspección técnica de HTML
+# Inspección técnica de HTML<a id="orgheadline35"></a>
 
 -   *Firebug* se ha convertido en la herramienta estándar
 -   Chinche de la malva o zapatero, una extensión del navegador que permite analizar y descubrir todo lo necesario sobre la página web que estamos visitando para su modificación o interpretación.
@@ -347,7 +455,7 @@ Cuando hay más de una página que cargar, cuenta con algunas opciones:
 -   Tanto es así que Mozilla Firefox tiene una versión integrada de Firebug, en analizador.
 -   Si queremos experimentar un poco más, podemos descargar la extensión desde <http://www.getfirebug.com>
 
-## Firebug
+## Firebug<a id="orgheadline33"></a>
 
 Una vez que hemos instalado la extesión de Firefox, podemos utilizarlo de dos manera:
 
@@ -360,7 +468,7 @@ Una vez que hemos instalado la extesión de Firefox, podemos utilizarlo de dos m
     -   Activamos la aplicación con el icono.
     -   También podemos seleccionar cualquier parte de la web con el botón derecho y pinchar en `inspeccionar elemento`
 
-## Consola
+## Consola<a id="orgheadline34"></a>
 
 En ambos casos trabajamos con una consola que nos muestra la información de la página, en concreto:
 
@@ -371,7 +479,7 @@ En ambos casos trabajamos con una consola que nos muestra la información de la 
 -   DOM, Muestra los objetos y propiedades DOM.
 -   Net, puedes comprobar cuańto tarda cada recurso en cargar, muestra las cabeceras de peticiones y respuestas HTTP para cada recurso.
 
-# Google Drive
+# Google Drive<a id="orgheadline40"></a>
 
 -   importHTML()
 -   importFeed()
@@ -380,7 +488,7 @@ En ambos casos trabajamos con una consola que nos muestra la información de la 
 -   importData()
 -   importRange()
 
-## ImportHTML()
+## ImportHTML()<a id="orgheadline36"></a>
 
 -   El método más fácil consiste en importar datos de una tabla o una lista a Google Drive con la función `IMPORTHTML`
 -   Para ello tendremos que tener ciertas nociones de *HTML*
@@ -394,7 +502,7 @@ En ambos casos trabajamos con una consola que nos muestra la información de la 
 
     =IMPORTHTML("URL";"list|table";n)
 
-## ImportXML
+## ImportXML<a id="orgheadline37"></a>
 
 -   También podemos utilizar la función `IMPORTXML("url";"xpath_query")` para extraer otro tipo de información o acceder al contenido por `XPath`.
 -   Para ayudarnos a ello, además de *Firebug*, podemos utilizar la extensión de Firefox [XPath Checker](https://addons.mozilla.org/en-US/firefox/addon/xpath-checker/)
@@ -425,7 +533,7 @@ Puede ser que la página no traiga los enlaces absolutos sino que sean relativos
 
 Y luego estiramos esta función al resto de las celdas que lo requieran.
 
-## Algunos ejemplos XPath útiles:
+## Algunos ejemplos XPath útiles:<a id="orgheadline38"></a>
 
 -   `//`, descarga todos los elementos de html que empiecen con `<`
 -   `//a`, descarga todos los contenidos del elemento `a`, los enlaces, de la URL que decidamos.
@@ -436,15 +544,15 @@ Y luego estiramos esta función al resto de las celdas que lo requieran.
 -   `//div[not(@class`'left')]=, encuentra todos los `div` cuyas clases no sean `left`
 -   `//img/@alt`, muestra todos los textos de los atributos `alt` de las imágenes `img`
 
-## Ejemplo complejo
+## Ejemplo complejo<a id="orgheadline39"></a>
 
     =IMPORTXML("URL";"//div[@class='clase']//h3")
 
 Nos da todos los titulares `h3` que se encuentran dentro del `div` con clase =clase=n de los artículos de la *URL*
 
-# PDF
+# PDF<a id="orgheadline58"></a>
 
-## Interroga a un *PDF*
+## Interroga a un *PDF*<a id="orgheadline41"></a>
 
 Diagrama propuesto por Nicolas Kayser-Brill
 
@@ -460,14 +568,14 @@ Diagrama propuesto por Nicolas Kayser-Brill
             -   *PDFtoExcelOnline*: subes un PDF y te envían por correo el XLS. <http://pdftoexcelonline.com>
             -   [smallpdf](http://smallpdf.com)
 
-## Colaboración
+## Colaboración<a id="orgheadline42"></a>
 
 -   Si todo lo anterior falla, se puede utilizar alguna herramienta colaborativa.
 -   [Documentcloud](http://www.documentcloud.org), creada por miembxs de la comunidad de periodismo de datos.
 -   [mTurk](https://www.mturk.com/mturk/welcome) de *Amazon*.
 -   [Crowdcrafting](http://crowdcrafting.org/)
 
-## Crowdcrafting: PDF Transcribe
+## Crowdcrafting: PDF Transcribe<a id="orgheadline43"></a>
 
 -   [PDF Transcribe](http://crowdcrafting.org/app/pdftranscribe/) es el nombre de la aplicación de *PyBossa* que permite transcribir un *PDF* colaborativamente.
 -   Utiliza la librería *Mozilla PDF.JS library* para cargar un archivo *PDF* externo y renderizarlo en la aplicación que se ejecuta en el navegador sin necesidad de terceros.
@@ -477,13 +585,13 @@ Diagrama propuesto por Nicolas Kayser-Brill
 
 ![img](//img10.imageshack.us/img10/5364/pdftranscribe1.png)
 
-## Probar, probar, probar
+## Probar, probar, probar<a id="orgheadline44"></a>
 
 -   ProPublica advierte en su guía para convertir PDF en documentos de texto que ninguna solución va a ser completa por la propia solución y/o por los documentos PDF.
 -   Lo normal es combinar las técnicas y encontrar las opciones que más satisfagan.
 -   Siempre se necesita una revisión manual o dos del trabajo realizado por las herramientas.
 
-## pdftotext, xpdf
+## pdftotext, xpdf<a id="orgheadline46"></a>
 
 -   *pdftotext* es una herramienta de código abierto
 -   Funciona en consola
@@ -504,7 +612,7 @@ Solo puede convertir un documento cada vez:
 
     pdftotext -l numero-ultima-pagina-convertir
 
-### Opciones
+### Opciones<a id="orgheadline45"></a>
 
 -   Especifica la resolución, en puntos por pulgada. El valor por defecto es 72.
 
@@ -546,7 +654,7 @@ Solo puede convertir un documento cada vez:
 
     pdftotext enc codificacion
 
-## Ghostscript
+## Ghostscript<a id="orgheadline47"></a>
 
 -   Es el lenguaje que entienden las impresoras.
 -   Se puede utilizar para reducir el tamaño de archivos *PDF*
@@ -560,13 +668,13 @@ En las opciones de `-dPDFSETTINGS`, puedes optar por:
 -   `/ebook`, selecciona resolución media y tamaño mediano.
 -   `/printer` y `/prepress`, para resoluciones altas
 
-## PDFtk
+## PDFtk<a id="orgheadline50"></a>
 
 -   PDFtk permite realizar muchas operaciones con *PDF*
 -   Necesitas el comando `pdftk` desde la terminal.
 -   O bien o [pdf toolkit](http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) <http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/>
 
-### Rotar documentos
+### Rotar documentos<a id="orgheadline48"></a>
 
 -   Para rotar por completo un *PDF* o páginas determinadas, en los puntos cardinales elegidos.
 -   Por ejemplo, para rotar una página 90 grados en el sentido de las agujas del reloj:
@@ -584,7 +692,7 @@ Las opciones son:
 
 `left`, `right` and `down` hacen ajustes relativos a la rotación de la páginas.
 
-### Dividir un PDF en varios
+### Dividir un PDF en varios<a id="orgheadline49"></a>
 
 -   Si queremos dividir (*split*) un *PDF* muy largo en varios documentos *PDF*, podemos utilizar la opción `burst`
 
@@ -592,7 +700,7 @@ Las opciones son:
 
 Lo que dará como resultado tantos archivos *PDF* como páginas tenía el documento.
 
-## ImageMagick
+## ImageMagick<a id="orgheadline51"></a>
 
 -   *Imagemagick* es un conjunto de herramientas en consola para modificar y tratar imágenes, bien en el momento o bien integrado en un *script* en *bash*.
 -   Lo podemos utilizar para convertir imágenes en *PDF* y así manipular el documento como *PDF*.
@@ -605,7 +713,7 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
 
     convert -density 150 archivo.pdf -quality 90 salida.png
 
-## Poppler-utils
+## Poppler-utils<a id="orgheadline52"></a>
 
 -   Con las utilidades *poppler-utils* manipulamos *PDF*
 -   Su paquete *pdftoppm* permite convertir *PDF* a imágenes en formato *ppm*, *png* o *jpg*.
@@ -624,7 +732,7 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
 
 -   La primera página es la número 1.
 
-## Rmagick
+## Rmagick<a id="orgheadline53"></a>
 
 -   [Rmagick](http://rmagick.rubyforge.org/portfolio.html) es otra herramienta que recomiendan en el artículo de ProPublica para trabajar con imágenes desde la consola
 -   También permite realizar dibujos en 2D.
@@ -633,7 +741,7 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
 -   Efectos especiales: <http://rmagick.rubyforge.org/portfolio2.html>
 -   Repositorio en GitHub: <http://github.com/rmagick/rmagick>
 
-## PDF Split and Merge
+## PDF Split and Merge<a id="orgheadline54"></a>
 
 -   Si nos da un poco de respeto o no podemos acceder a una línea de comandos, podemos contar con [PDF Split and Merge](http://sourceforge.net/projects/pdfsam/%0A)
 -   Se trata de una herramienta en modo gráfico (y también en línea de comandos) para separar, juntar, mezclar y rotar *PDF*.
@@ -646,7 +754,7 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
     -   Mezclar dos documentos *PDF*, componiendo uno nuevo que alterne una página de cada.
     -   Componer visualmente un nuevo *PDF* arrastrando páginas de otros *PDF*.
 
-## Herramientas Web
+## Herramientas Web<a id="orgheadline55"></a>
 
 -   Zamzar, Cometdocs y Smallpdf son servicios web online.
 -   Por tanto, el documento deja de estar en tu equipo y pasa por Inet hasta sus servidores.
@@ -655,7 +763,7 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
 -   [Cometdocs](http://www.cometdocs.com/) es otro servicio web para realizar conversiones aunque también funciona como servicio de almacenamiento y para compartir archivos. Dispone de una versión escritorio para *Windows* e *iOS*. También dispone de una API como servicio de pago.
 -   [smallpdf](http://smallpdf.com/) es otro servicio web que permite manipular y convertir *PDF*
 
-## Tika
+## Tika<a id="orgheadline56"></a>
 
 -   [OKFN Labs](http://okfnlabs.org) tiene en fase beta un [servicio web](http://okfnlabs.org/blog/2015/02/21/documents-to-text.html) que permite convertir un gran número de tipos de archivo a `TXT`:
 -   El servicio web se encuentra en <http://beta.offenedaten.de:9998/tika>, y para comprobar su funcionamiento tan solo hemos de tener una imagen que contenga texto y lanzar la consulta, en *Mac*, *GNU/Linux* o *Cygwin*, desde la terminal:
@@ -672,7 +780,7 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
 -   Ha creado una imagen *docker* por si quieres replicarlo en tu [propio servidor](https://registry.hub.docker.com/u/mattfullerton/tika-tesseract-docker/%0A)
 -   Y también puedes construirla desde [GitHub](https://github.com/mattfullerton/tika-tesseract-docker)
 
-## Good Tables
+## Good Tables<a id="orgheadline57"></a>
 
 -   *Good Tables* es otro proyecto de [OKFNLabs](http://okfnlabs.org) que consiste en un paquete *Python* para validar datos tabulares.
 -   Puede funcionar con simples *CSV* o en una tubería de procesos *ETL*.
@@ -680,7 +788,7 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
 -   Artículo sobre Good Tables, <http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html>
 -   Read the Docs, <https://goodtables.readthedocs.org/en/latest/>
 
-# Un caso singular: ProPublica
+# Un caso singular: ProPublica<a id="orgheadline61"></a>
 
 -   [ProPublica](http://propublica.org/) realiza grandes investigaciones de periodismo de datos.
 -   Y tanto o más importante: lo documentan.
@@ -690,7 +798,7 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
     -   [Tratamiento de imágenes](http://www.propublica.org/nerds/item/image-to-text-ocr-and-imagemagick)
     -   [PDF scraping](http://www.propublica.org/nerds/item/turning-pdfs-to-text-doc-dollars-guide)
 
-## El proceso
+## El proceso<a id="orgheadline59"></a>
 
 Ante una tabla de datos en una imagen:
 
@@ -718,16 +826,16 @@ Ante una tabla de datos en una imagen:
 
 1.  Limpieza de los datos, ya que *Tesseract* puede equivocarse en caracteres similares, como por ejemplo `0` de cero y `O` de o mayúscula. Por lo que probablemente no podamos dejar de hacer una comprobación manual, si bien en este proceso podemos implicar a más personas, bien a través de las citadas *Crowdcrafting* o *mTurk*. En este sentido, ProPublica utilizó *mTurk* y realizó esta [guía](http://www.propublica.org/article/propublicas-guide-to-mechanical-turk).
 
-## PDFTables
+## PDFTables<a id="orgheadline60"></a>
 
 Servicio web creado por ScraperWiki, un servicio de *web scraping*, para extraer tablas de PDFs. Requiere crearse un usuario. Puedes descargar los resultados a través del navegador. Advierten que si usas muchos documentos, tendrás que convertirte en usuario de pago.
 <https://pdftables.com/>
 
-# OCR
+# OCR<a id="orgheadline64"></a>
 
 El reconocimiento óptico de caracteres *OCR* (por sus siglas en inglés *Optical Character Recognition*) nos permite convertir imágenes que contienen texto en documentos de texto gracias a algoritmos automáticos que realizan ese reconocimiento.
 
-## Google Drive
+## Google Drive<a id="orgheadline62"></a>
 
 -   Google Drive realiza OCR sobre imágenes individuales en formato *jpg*, *png* o *gif* pero también en documentos *PDF* de una o más páginas
 -   Google recomienda ciertas pautas para el uso de OCR:
@@ -741,7 +849,7 @@ El reconocimiento óptico de caracteres *OCR* (por sus siglas en inglés *Optica
 -   *Google OCR* pretende mantener el formato básico del texto, como son las negritas o las itálicas, el tamaño y el tipo de fuente y los saltos de línea, pero reconocen que detectar estos elementos es complicado y no siempre lo consiguen.
 -   Otros contenidos estructurados como listas numeradas, listados estructurados, tablas, columnas de texto, pies de página y notas finales es probable que no sean reconocidos.
 
-## Tesseract-ocr
+## Tesseract-ocr<a id="orgheadline63"></a>
 
 -   [Tesseract](https://github.com/tesseract-ocr) se anuncia como las más completa y precisa solución de código abierto disponible para el reconocimiento óptico de caracteres.
 -   Combinado con la librería de procesamiento de imágenes *Leptonica*, lee varios formatos de imagen y convierte texto de más de sesenta idiomas.
@@ -778,7 +886,7 @@ El listado completo lo puedes encontrar en <https://tesseract-ocr.googlecode.com
 -   El manual completo con las distintas opciones y argumentos de entrada y salida está disponible en <https://tesseract-ocr.googlecode.com/svn/trunk/doc/tesseract.1.html>
 -   Tesseract-ocr, <https://code.google.com/p/tesseract-ocr/>
 
-# Referencias bibliográficas     :OK:
+# Referencias bibliográficas     :OK:<a id="orgheadline65"></a>
 
 -   Aristarain, Manuel & Tigas, Mike & Merril, Jeremy B. (2014) *Scraping PDFs with Tabula*. URL: <https://s3.amazonaws.com/media.miketigas.com/files/20140627/20140627-tabula-IRE2014-withnotes.pdf>
 
@@ -798,7 +906,7 @@ El listado completo lo puedes encontrar en <https://tesseract-ocr.googlecode.com
 
 -   Schoolofdata, (2014) *Obteniendo datos de los PDF*. Web: School of Data. URL: <http://es.schoolofdata.org/obteniendo-datos-de-los-pdfs/>
 
-# Manuales
+# Manuales<a id="orgheadline66"></a>
 
 -   Cómo utilizar *Google OCR*,  <https://www.youtube.com/watch?v=DPJJON26Do4>
 -   Introducción al scraping de *PDF*, <http://www.irekia.euskadi.eus/es/news/11703-introduccion-google-refine-curso-periodismo-datos>
