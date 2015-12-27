@@ -34,6 +34,16 @@ Pero también otras cuestiones directamente relacionadas como:
 -   Se puede acceder a servicios web anónimos, con perfiles, buscadores generales y específicos.
 -   El buscador es un software que recopila e indexa archivos almacenados en servidores web y recupera la información conforme a algunos criterios específicos.
 
+## Recopilar datos
+
+-   La manera más sencilla de extraer datos de una página web consiste en seleccionar el texto, copiarlo y pegarlo allí donde queremos luego trabajar con ello.
+-   Si se tratan de datos que se encuentran dispuestos en tablas, los podemos copiar y pegar en nuestra aplicación de hoja de cálculo favorito.
+-   Es la forma más fácil pero también **manual**.
+-   Si queremos **automatizar** esa tarea, o incluso **si no nos deja hacerlo manualmente**, tenemos que optar por otras opciones.
+-   Las opciones más fáciles pasan por que los datos estén bien estructurados, un HTML bien formado
+-   Se habla de recopilación de datos, *crawling* o *spiding* cuando nos descargamos sitios completos.
+-   Se habla de *scraping* cuando rascas de aquí y de allá.
+
 ## Búsqueda avanzada
 
 -   Se puede utilizar búsqueda avanzada en los principales buscadores
@@ -170,6 +180,22 @@ Pero también otras cuestiones directamente relacionadas como:
 
 Example: cache:washington.edu
 
+## Desafíos
+
+-   Busca patrones en la información, los datos o la estructura de las páginas:
+
+-   Estructura de páginas estructurada:
+
+<http://www.ejercito.mde.es/unidades/Cordoba/index.html> 
+
+-   Una tabla en una web
+
+<https://en.wikipedia.org/wiki/List_of_Spanish_provinces_by_sequence_or_length_of_coastline>
+
+-   Tablas páginadas con *URLs* distintas
+
+<http://www.bbc.co.uk/food/recipes/>
+
 # Otras utilidades
 
 Veremos algunas utilidades que nos pueden ayudar de una u otra manera:
@@ -225,14 +251,14 @@ Veremos algunas utilidades que nos pueden ayudar de una u otra manera:
 -   [Readability](http://www.readability.com), servicio web que ayuda a extraer texto de la página web. Dispone de extensión para Firefox.
 -   [DownThemAll](http://www.downthemall.net/), extensión que permite la descarga de varios archivos a la vez.
 
-## Outwit Hub
+# Outwit Hub
 
 -   Outwit Hub, software y extensión para el navegador que contiene varias utilidades de reconocimiento y extracción de contenidos web y de organizar las colecciones de datos.
 -   Busca automáticamente a través de páginas.
 -   La primera vista en el marco de la izquierda es `Página`, mientras que los otros objetos son: `links`, `images`, `data`
 -   OutWit considera la página web como elementos de datos, por lo que si nos ponemos sobre el objeto `images`, seleccionaremos todas las imágenes.
 
-### Conceptos Outwit
+## Conceptos Outwit
 
 Hay tres conceptos en OutWit Hub:
 
@@ -240,7 +266,7 @@ Hay tres conceptos en OutWit Hub:
 2.  Podemos filtrar la información por cada tipo de datos y recogerla en nuestra cesta.
 3.  Puedes navegar a lo largo de varias páginas con el botón de paginación.
 
-### Vistas Outwit
+## Vistas Outwit
 
 Las vistas que muestra *OutWit* son:
 
@@ -255,7 +281,7 @@ Las vistas que muestra *OutWit* son:
 -   *Scraper*, aplica un escrapeador previamente cargado a la página.
 -   *Source*, muestra el HTML de la página.
 
-### Filtros Outwit
+## Filtros Outwit
 
 Los filtros de control de los que dispone:
 
@@ -266,7 +292,7 @@ Los filtros de control de los que dispone:
 -   *Style*, si se marca se ocultarán las imágenes que no vengan de CSS.
 -   Background, muestra las imágenes utilizadas como fondo si está marcada.
 
-### Navegación Outwit
+## Navegación Outwit
 
 Cuando hay más de una página que cargar, cuenta con algunas opciones:
 
@@ -276,20 +302,20 @@ Cuando hay más de una página que cargar, cuenta con algunas opciones:
 -   *Site Home*, carga la página principal del sitio.
 -   *Slideshow*, muestra las imágenes de la página como un carrusel.
 
-### Resultados
+## Resultados
 
 -   Los datos se pueden exportar a CSV, TSV, HTML, XLS o crear scripts SQL para guardarlos en bases de datos.
 -   En la versión de pago también se pueden programar tareas.
 -   Se suele adoptar como estándar de tiempo entre petición y petición la de 2 segundos de retraso.
 -   Si nos encontramos con contenido generado dinámicamente a través de javascript, será mejor que recopilemos los datos manualmente o que aprendemos otra técnica.
 
-### Enlaces Outwit
+## Enlaces Outwit
 
 -   Extensión, <http://www.outwit.com/products/hub/license.php>
 -   Add-on Firefox, <https://addons.mozilla.org/en-US/firefox/addon/outwit-hub/>
 -   Vídeo, <https://www.youtube.com/watch?v=ffoXpBlHZpo>
 
-## Import.io
+# Import.io
 
 -   Import.io es una herramienta para la extracción de datos de páginas web.
 -   No se necesita ningún aprendizaje de lenguajes de programación.
@@ -304,7 +330,7 @@ Cuando hay más de una página que cargar, cuenta con algunas opciones:
     -   Si queremos descargarnos los datos para jugar con ellos, *Download CSV*
     -   Pero también podemos crear una *API*, si estamos registrados.
 
-## Kimonolabs
+# Kimonolabs
 
 -   Herramienta de *scraping* que convierte web en API.
 -   Se utiliza como [extensión](https://chrome.google.com/webstore/detail/kimono/deoaddaobnieaecelinfdllcgdehimih?hl%3Des%0A) en Chrome/Chromium o atajo a los marcadores en Firefox.
@@ -312,7 +338,7 @@ Cuando hay más de una página que cargar, cuenta con algunas opciones:
 -   Una de las características de Kimono y que lo hacen muy atractivo es el hecho de crear una API sobre la base de cualquier web.
 -   La *API* nos ofrece una forma de interactuar con el contenido de esa web de forma automática, por lo que podemos crear nuestra propia web o aplicación con nuestro propio *HTML*, *CSS* y/o *JavaScript* y poner el contenido de esa *API*, normalmente en formato *JSON*.
 
-## Inspección técnica de HTML
+# Inspección técnica de HTML
 
 -   *Firebug* se ha convertido en la herramienta estándar
 -   Chinche de la malva o zapatero, una extensión del navegador que permite analizar y descubrir todo lo necesario sobre la página web que estamos visitando para su modificación o interpretación.
@@ -321,7 +347,7 @@ Cuando hay más de una página que cargar, cuenta con algunas opciones:
 -   Tanto es así que Mozilla Firefox tiene una versión integrada de Firebug, en analizador.
 -   Si queremos experimentar un poco más, podemos descargar la extensión desde <http://www.getfirebug.com>
 
-### Firebug
+## Firebug
 
 Una vez que hemos instalado la extesión de Firefox, podemos utilizarlo de dos manera:
 
@@ -334,7 +360,7 @@ Una vez que hemos instalado la extesión de Firefox, podemos utilizarlo de dos m
     -   Activamos la aplicación con el icono.
     -   También podemos seleccionar cualquier parte de la web con el botón derecho y pinchar en `inspeccionar elemento`
 
-### Consola
+## Consola
 
 En ambos casos trabajamos con una consola que nos muestra la información de la página, en concreto:
 
@@ -345,7 +371,7 @@ En ambos casos trabajamos con una consola que nos muestra la información de la 
 -   DOM, Muestra los objetos y propiedades DOM.
 -   Net, puedes comprobar cuańto tarda cada recurso en cargar, muestra las cabeceras de peticiones y respuestas HTTP para cada recurso.
 
-## Google Drive
+# Google Drive
 
 -   importHTML()
 -   importFeed()
@@ -354,27 +380,24 @@ En ambos casos trabajamos con una consola que nos muestra la información de la 
 -   importData()
 -   importRange()
 
-### ImportHTML()
+## ImportHTML()
 
--   Veamos el método más fácil sin duda que consiste en importar datos de una tabla o una lista a Google Drive con la función `IMPORTHTML`
+-   El método más fácil consiste en importar datos de una tabla o una lista a Google Drive con la función `IMPORTHTML`
 -   Para ello tendremos que tener ciertas nociones de *HTML*
--   `ul`, que corresponde a *unordered list* o lista desordenada, la típica lista donde cada elemento aparece con un punto o un guión.
--   `ol`, que corresponde a *ordered list* o lista ordenada, donde los elementos del listado aparecerán ordenados, bien numérica o alfabéticamente, por ejemplo.
--   `dl`, corresponde con *description list*, listas de descripciones
--   `table`, corresponde con una tabla de datos tabulados.
-
-### ImportHTML
-
 -   Permite importar contenido de tipos de elementos *HTML*, tablas y listados.
--   Afecta a los elementos `table`, `ul`
+-   Afecta a los elementos `table` (tabla), `ul`, `ol` y `dl` (listados).
+    -   `ul`, que corresponde a *unordered list* o lista desordenada, la típica lista donde cada elemento aparece con un punto o un guión.
+    -   `ol`, que corresponde a *ordered list* o lista ordenada, donde los elementos del listado aparecerán ordenados, bien numérica o alfabéticamente, por ejemplo.
+    -   `dl`, corresponde con *description list*, listas de descripciones
+    -   `table`, corresponde con una tabla de datos tabulados.
 -   Construiremos la función `IMPORTHTML` con la *url* entrecomillada, separado por punto y coma y entrecomillado el elemento del que queremos sacar la información, bien una lista `list` o una tabla `table`, seguido del número de elemento en la página de su mismo tipo, separado por otro punto y coma:
 
     =IMPORTHTML("URL";"list|table";n)
 
-### ImportXML
+## ImportXML
 
 -   También podemos utilizar la función `IMPORTXML("url";"xpath_query")` para extraer otro tipo de información o acceder al contenido por `XPath`.
--   Para ayudarnos a ello, además de Firebub, podemos utilizar la extensión de Firefox [XPath Checker](https://addons.mozilla.org/en-US/firefox/addon/xpath-checker/)
+-   Para ayudarnos a ello, además de *Firebug*, podemos utilizar la extensión de Firefox [XPath Checker](https://addons.mozilla.org/en-US/firefox/addon/xpath-checker/)
      -Por ejemplo, si queremos obtener el listado de todos los atributos `href` que contiene el elemento `a` que corresponde a los enlaces, de la *URL*, haremos:
 
     =IMPORTXML("URL";"//a/@href")
@@ -387,8 +410,8 @@ En ambos casos trabajamos con una consola que nos muestra la información de la 
 
     =IMPORTXML(celda1;celda2)
 
--   La potencia de *Xpath* es *infinita* y podemos hacer extracciones de datos muy concretas, donde podemos optar, por ejemplo, a seleccionar solo los elementos que comiencen con una clase específica, como `[starts-with` y luego especificar la clase con el atributo `@` donde `class` es el valor del atributo `(@class, 'clase')`
--   Si queremos sacar todos los enlaces una *URL*, después de inspeccionar la página, comprobamos que los enlaces se encuentran en un `div` que tiene la clase `clase`. Construimos construimos esta fórmula de `IMPORTXML`
+-   La potencia de *Xpath* es *infinita* y podemos hacer extracciones de datos muy concretas, como por ejemplo seleccionar solo los elementos que comiencen con una clase específica, como `[starts-with` y luego especificar la clase con el atributo `@` donde `class` es el valor del atributo `(@class, 'clase')`
+-   Si queremos sacar todos los enlaces una *URL*, después de inspeccionar la página, comprobamos que los enlaces se encuentran en un `div` que tiene la clase `clase`. Construimos esta fórmula de `IMPORTXML`
 
     =IMPORTXML("URL"; "//div[starts-with(@class,'clase')]")
 
@@ -402,7 +425,7 @@ Puede ser que la página no traiga los enlaces absolutos sino que sean relativos
 
 Y luego estiramos esta función al resto de las celdas que lo requieran.
 
-### Algunos ejemplos XPath útiles:
+## Algunos ejemplos XPath útiles:
 
 -   `//`, descarga todos los elementos de html que empiecen con `<`
 -   `//a`, descarga todos los contenidos del elemento `a`, los enlaces, de la URL que decidamos.
@@ -413,37 +436,11 @@ Y luego estiramos esta función al resto de las celdas que lo requieran.
 -   `//div[not(@class`'left')]=, encuentra todos los `div` cuyas clases no sean `left`
 -   `//img/@alt`, muestra todos los textos de los atributos `alt` de las imágenes `img`
 
-### Ejemplo complejo
+## Ejemplo complejo
 
     =IMPORTXML("URL";"//div[@class='clase']//h3")
 
 Nos da todos los titulares `h3` que se encuentran dentro del `div` con clase =clase=n de los artículos de la *URL*
-
-# Recopilar datos
-
--   La manera más sencilla de extraer datos de una página web consiste en seleccionar el texto, copiarlo y pegarlo allí donde queremos luego trabajar con ello.
--   Si se tratan de datos que se encuentran dispuestos en tablas, los podemos copiar y pegar en nuestra aplicación de hoja de cálculo favorito.
--   Es la forma más fácil pero también **manual**.
--   Si queremos **automatizar** esa tarea, o incluso **si no nos deja hacerlo manualmente**, tenemos que optar por otras opciones.
--   Las opciones más fáciles pasan por que los datos estén bien estructurados, un HTML bien formado
--   Se habla de recopilación de datos, *crawling* o *spiding* cuando nos descargamos sitios completos.
--   Se habla de *scraping* cuando rascas de aquí y de allá.
-
-## Desafíos
-
-Busca patrones en la información, los datos o la estructura de las páginas:
-
--   Estructura de páginas estructurada:
-
-<http://www.ejercito.mde.es/unidades/Cordoba/index.html> 
-
--   Una tabla en una web
-
-<https://en.wikipedia.org/wiki/List_of_Spanish_provinces_by_sequence_or_length_of_coastline>
-
--   Tablas páginadas con *URLs* distintas
-
-<http://www.bbc.co.uk/food/recipes/>
 
 # PDF
 
@@ -695,32 +692,31 @@ Lo que dará como resultado tantos archivos *PDF* como páginas tenía el docume
 
 ## El proceso
 
--   Ante una tabla de datos en una imagen:
-    1.  En un programa de tratamiento de imágenes, con líneas guía, crearon una cuadrícula donde el texto de cada celda pudiera posteriormente seleccionarse con la herramienta de selección rectangular.
-    2.  Dividieron la imagen y crearon imágenes nuevas, una por cada celda con texto, identificándolas apropiadamente con el número de celda por fila (*row*) y por columna (*column*) correcto.
-    3.  Para ello utilizaron distintas operaciones de *RMagick*.
-    4.  Descartaron todo el espacio en blanco de los márgenes de la tabla con [bounding\_box](http://studio.imagemagick.org/RMagick/doc/image1.html#bounding_box),
-    5.  Convirtieron la tabla a blanco y negro (escala de grises) para que el *OCR* funcione mejor.
-    6.  Primero probaron con las opciones de *RMagick* `quantize` y `contrast`, pero como los resultados no fueron los esperados lo hicieron con *Photoshop*, que permite también operaciones por lotes.
-    7.  Crearon una imagen con cada celda con un nombre que lo identificara su posición en la tabla por número de fila y número de columna. Así lograron 500 archivos de imagen.
-    8.  Detectaron las líneas de la tabla para crear coordenadas de celdas con la opción `get_pixels`, sobre las que cortar la imagen de la tabla en imágenes de cada celda.
-    9.  Realiza *OCR* con *tesseract*, integrado en el *script* con esta llamada (más adelante se ve el *script* completo donde se integra esta llamada):
+Ante una tabla de datos en una imagen:
+
+1.  En un programa de tratamiento de imágenes, con líneas guía, crearon una cuadrícula donde el texto de cada celda pudiera posteriormente seleccionarse con la herramienta de selección rectangular.
+2.  Dividieron la imagen y crearon imágenes nuevas, una por cada celda con texto, identificándolas apropiadamente con el número de celda por fila (*row*) y por columna (*column*) correcto.
+3.  Para ello utilizaron distintas operaciones de *RMagick*.
+4.  Descartaron todo el espacio en blanco de los márgenes de la tabla con [bounding\_box](http://studio.imagemagick.org/RMagick/doc/image1.html#bounding_box),
+5.  Convirtieron la tabla a blanco y negro (escala de grises) para que el *OCR* funcione mejor.
+6.  Primero probaron con las opciones de *RMagick* `quantize` y `contrast`, pero como los resultados no fueron los esperados lo hicieron con *Photoshop*, que permite también operaciones por lotes.
+7.  Crearon una imagen con cada celda con un nombre que lo identificara su posición en la tabla por número de fila y número de columna. Así lograron 500 archivos de imagen.
+8.  Detectaron las líneas de la tabla para crear coordenadas de celdas con la opción `get_pixels`, sobre las que cortar la imagen de la tabla en imágenes de cada celda.
+9.  Realiza *OCR* con *tesseract*, integrado en el *script* con esta llamada (más adelante se ve el *script* completo donde se integra esta llamada):
 
     `tesseract /cell-files/#{j}x#{i}.tif /cell-files/#{j}x#{i}.txt `
 
 1.  Construye la tabla de datos en modo texto con el texto resultante del paso anterior, también de manera automatizada incorporándolo al *script*:
 
-    # abre el archivo que tesseract ha creado y almacena el texto en el array
+    \# abre el archivo que tesseract ha creado y almacena el texto en el array
     	       text_row << File.open("cell-files/#{j}x#{i}.txt", 'r').readlines.map{|line| line.strip}.join(" ")
     
     	     end
     
-    # une el array con los caracteres de tabulación y produce una salida de datos en una línea
+    \# une el array con los caracteres de tabulación y produce una salida de datos en una línea
     	     output_file.puts( text_row.join("\t"))
 
-1.  Limpieza de los datos, ya que *Tesseract* puede equivocarse en caracteres similares, como por ejemplo `0` de cero y `O` de o mayúscula. Por lo que probablemente no podamos dejar de hacer una comprobación manual, si bien en este proceso podemos implicar a más personas, bien a través de las citadas *Crowdcrafting* o *mTurk*. En este sentido, ProPublica utilizó *mTurk* y realizó esta guía:
-
-<http://www.propublica.org/article/propublicas-guide-to-mechanical-turk>
+1.  Limpieza de los datos, ya que *Tesseract* puede equivocarse en caracteres similares, como por ejemplo `0` de cero y `O` de o mayúscula. Por lo que probablemente no podamos dejar de hacer una comprobación manual, si bien en este proceso podemos implicar a más personas, bien a través de las citadas *Crowdcrafting* o *mTurk*. En este sentido, ProPublica utilizó *mTurk* y realizó esta [guía](http://www.propublica.org/article/propublicas-guide-to-mechanical-turk).
 
 ## PDFTables
 
