@@ -179,7 +179,8 @@ Sí que puede variar desde que he realizado la búsqueda hasta que lo buscáis.
 -   El operador por defecto cuando se buscan dos palabras es es `+`, `AND` o `Y`.
 -   En Google se utiliza `+`, no los otros.
 -   Eso quiere decir que se buscan documentos que contengan esas dos palabras.
--   La búsqueda de `inmigración ilegal` devuelve los mismos resultados, 6680, que `inmigración + ilegal`
+
+La búsqueda de `inmigración ilegal` devuelve los mismos resultados, 6680, que `inmigración + ilegal`
 
     site:elpais.com inmigración ilegal
 
