@@ -565,7 +565,7 @@ Y luego estiramos esta función al resto de las celdas que lo requieran.
 
 ## Algunos ejemplos XPath útiles:<a id="orgheadline45"></a>
 
--   `//`, descarga todos los elementos de html que empiecen con `<`
+-   `/`, descarga todos los elementos de html que empiecen con `<`
 -   `//a`, descarga todos los contenidos del elemento `a`, los enlaces, de la URL que decidamos.
 -   `//a/@href`, descarga todos los contenidos del atributo `href` del elemento `a`, que corresponden con la URL del enlace.
 -   `//input[@type`'text']/..=, descarga todos los elementos padre de los elementos de texto `input`
