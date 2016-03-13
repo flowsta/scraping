@@ -81,53 +81,49 @@
 <li><a href="#orgheadline51">Ejemplo complejo</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline76">PDF</a>
+<li><a href="#orgheadline75">PDF</a>
 <ul>
 <li><a href="#orgheadline53">Interroga a un <i>PDF</i></a></li>
 <li><a href="#orgheadline54">Colaboración</a></li>
 <li><a href="#orgheadline55">Crowdcrafting: PDF Transcribe</a></li>
 <li><a href="#orgheadline56">Probar, probar, probar</a></li>
-<li><a href="#orgheadline58">pdftotext, xpdf</a>
+<li><a href="#orgheadline57">pdftotext, xpdf</a></li>
+<li><a href="#orgheadline58">Ghostscript</a></li>
+<li><a href="#orgheadline61">PDFtk</a>
 <ul>
-<li><a href="#orgheadline57">Opciones</a></li>
+<li><a href="#orgheadline59">Rotar documentos</a></li>
+<li><a href="#orgheadline60">Dividir un PDF en varios</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline59">Ghostscript</a></li>
-<li><a href="#orgheadline62">PDFtk</a>
+<li><a href="#orgheadline62">ImageMagick</a></li>
+<li><a href="#orgheadline63">Poppler-utils pdftoppm</a></li>
+<li><a href="#orgheadline64">pdfcrop</a></li>
+<li><a href="#orgheadline65">pdfjam</a></li>
+<li><a href="#orgheadline66">PDF-Shuffler</a></li>
+<li><a href="#orgheadline67">Briss</a></li>
+<li><a href="#orgheadline68">qpdf</a></li>
+<li><a href="#orgheadline69">pyPdf</a></li>
+<li><a href="#orgheadline70">Rmagick</a></li>
+<li><a href="#orgheadline71">PDF Split and Merge</a></li>
+<li><a href="#orgheadline72">Herramientas Web</a></li>
+<li><a href="#orgheadline73">Tika</a></li>
+<li><a href="#orgheadline74">Good Tables</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline78">Un caso singular: ProPublica</a>
 <ul>
-<li><a href="#orgheadline60">Rotar documentos</a></li>
-<li><a href="#orgheadline61">Dividir un PDF en varios</a></li>
+<li><a href="#orgheadline76">El proceso</a></li>
+<li><a href="#orgheadline77">PDFTables</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline63">ImageMagick</a></li>
-<li><a href="#orgheadline64">Poppler-utils pdftoppm</a></li>
-<li><a href="#orgheadline65">pdfcrop</a></li>
-<li><a href="#orgheadline66">pdfjam</a></li>
-<li><a href="#orgheadline67">PDF-Shuffler</a></li>
-<li><a href="#orgheadline68">Briss</a></li>
-<li><a href="#orgheadline69">qpdf</a></li>
-<li><a href="#orgheadline70">pyPdf</a></li>
-<li><a href="#orgheadline71">Rmagick</a></li>
-<li><a href="#orgheadline72">PDF Split and Merge</a></li>
-<li><a href="#orgheadline73">Herramientas Web</a></li>
-<li><a href="#orgheadline74">Tika</a></li>
-<li><a href="#orgheadline75">Good Tables</a></li>
-</ul>
-</li>
-<li><a href="#orgheadline79">Un caso singular: ProPublica</a>
+<li><a href="#orgheadline81">OCR</a>
 <ul>
-<li><a href="#orgheadline77">El proceso</a></li>
-<li><a href="#orgheadline78">PDFTables</a></li>
+<li><a href="#orgheadline79">Google Drive</a></li>
+<li><a href="#orgheadline80">Tesseract-ocr</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline82">OCR</a>
-<ul>
-<li><a href="#orgheadline80">Google Drive</a></li>
-<li><a href="#orgheadline81">Tesseract-ocr</a></li>
-</ul>
-</li>
-<li><a href="#orgheadline83">Referencias bibliográficas&#xa0;&#xa0;&#xa0;<span class="tag"><span class="OK">OK</span></span></a></li>
-<li><a href="#orgheadline84">Manuales</a></li>
+<li><a href="#orgheadline82">Referencias bibliográficas&#xa0;&#xa0;&#xa0;<span class="tag"><span class="OK">OK</span></span></a></li>
+<li><a href="#orgheadline83">Manuales</a></li>
 </ul>
 </div>
 </div>
@@ -619,7 +615,7 @@ Y luego estiramos esta función al resto de las celdas que lo requieran.
 
 Nos da todos los titulares `h3` que se encuentran dentro del `div` con clase =clase=n de los artículos de la *URL*
 
-# PDF<a id="orgheadline76"></a>
+# PDF<a id="orgheadline75"></a>
 
 ## Interroga a un *PDF*<a id="orgheadline53"></a>
 
@@ -660,74 +656,69 @@ Diagrama propuesto por Nicolas Kayser-Brill
 -   Lo normal es combinar las técnicas y encontrar las opciones que más satisfagan.
 -   Siempre se necesita una revisión manual o dos del trabajo realizado por las herramientas.
 
-## pdftotext, xpdf<a id="orgheadline58"></a>
+## pdftotext, xpdf<a id="orgheadline57"></a>
 
--   *pdftotext* es una herramienta de código abierto
--   Funciona en consola
--   Convierte archivos *PDF* a texto plano.
--   Forma parte de *xpdf*, un conjunto de aplicaciones para trabajar con documentos PDF. También se incluye como parte de *Poppler*, un proyecto derivado de *Xpdf*.
+*pdftotext* es una herramienta de código abierto que funciona en consola y convierte *PDF* a texto plano.
+
+Forma parte de [xpdf](http://www.foolabs.com/xpdf/download.html), un conjunto de aplicaciones para trabajar con documentos *PDF*. También se incluye como parte de *Poppler*, un proyecto derivado de *Xpdf*.
 
 Solo puede convertir un documento cada vez:
 
     pdftotext archivo.pdf
 
-<http://www.foolabs.com/xpdf/download.html>
-
--   Para especificar la primera página a convertir:
+Para especificar la primera página a convertir:
 
     pdftotext -f numero-primera-pagina-convertir
 
--   Especifica la última página a convertir:
+O para especificar la última página:
 
     pdftotext -l numero-ultima-pagina-convertir
 
-### Opciones<a id="orgheadline57"></a>
-
--   Especifica la resolución, en puntos por pulgada. El valor por defecto es 72.
+Se puede especificar la resolución, en puntos por pulgada. El valor por defecto es 72.
 
     pdftotext -r resolucion-en-PPP
 
--   Especifica la coordenada x del área que selecciona desde la esquina superior izqda:
+O bien seleccionar un área, tomando como `coordenada-x` el área que selecciona desde la esquina superior izqda con `-x`:
 
     pdftotext -x coordenada-x
 
--   Especifica coordenada y del área que selecciona desde la esquina superior izqda:
+Y desde la coordenada y con `-y`
 
     pdftotext -y coordenada-y
 
--   Especifica la anchura (la `W` es por *width*) del área en pixels. El valor por defecto es 0:
+También se puede especificar la anchura con `W` (*width*) del área en pixels. El valor por defecto es 0:
 
-    $ pdftotext -W valor-ancho
+    pdftotext -W valor-ancho
 
--   Especifica la altura (la `H` es por *height*) del área seleccionada en pixels. El valor por defecto es 0.
+Y la altura con `H` (*height*) del área seleccionada en pixels. El valor por defecto es 0.
 
     pdftotext -H valor-alto
 
--   Si queremos conservar el aspecto tanto como se pueda, hay que apuntar la opción `-layout`. El valor por defecto es `undo`, que fuerza el texto a mostrarse en texto corrido.
+Si queremos conservar el aspecto tanto como se pueda, hay que apuntar la opción `-layout`. El valor por defecto es `undo`, que fuerza el texto a mostrarse en texto corrido.
 
     pdftotext -layout
 
--   Ancho fijo tabulado, con el valor de la anchura en puntos, lo cual fuerza el modo de disposición física:
+Incluso podemos establecer un ancho fijo tabulado, con el valor de la anchura en puntos, lo cual fuerza el modo de disposición física, con la opción `-fixed`:
 
     pdftotext -fixed valor-ancho-en-puntos
 
--   Generación de archivo *HTML* que incluya la meta información, encaja el texto en elementos `<pre>` y `</pre>`
+Por último, is queremos generar un archivo *HTML* que incluya la meta información, encaja el texto en elementos `<pre>` y `</pre>`, utilizaremos la opción `-htmlmeta`
 
     pdftotext -htmlmeta
 
--   Con la opción `-bbox` se genera un archivo *XHTML* que contiene caja de información de cada palabra.
+O bien la opción `-bbox` que genera un archivo *XHTML* que contiene caja de información de cada palabra.
 
     pdftotext -bbox
 
--   Si queremos especificar la codificación del formato de salida. Por defecto es *UTF-8*:
+Para especificar la codificación del formato de salida lo haremos con `enc`. Por defecto es *UTF-8*:
 
     pdftotext enc codificacion
 
-## Ghostscript<a id="orgheadline59"></a>
+## Ghostscript<a id="orgheadline58"></a>
 
--   Es el lenguaje que entienden las impresoras.
--   Se puede utilizar para reducir el tamaño de archivos *PDF*
--   Si tienes *Ghostscript* instalado (`gs`), puedes correr este comando en consola:
+Es el lenguaje que entienden las impresoras.
+
+Se puede utilizar para reducir el tamaño de archivos *PDF*. Si tienes *Ghostscript* instalado (`gs`), puedes correr este comando en consola:
 
     gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -sOutputFile=nuevo_archivo.pdf original.pdf
 
@@ -737,13 +728,13 @@ En las opciones de `-dPDFSETTINGS`, puedes optar por:
 -   `/ebook`, selecciona resolución media y tamaño mediano.
 -   `/printer` y `/prepress`, para resoluciones altas
 
-## PDFtk<a id="orgheadline62"></a>
+## PDFtk<a id="orgheadline61"></a>
 
 -   *PDFtk* permite realizar muchas operaciones con *PDF*
 -   Necesitas el comando `pdftk` desde la terminal.
 -   O bien o [pdf toolkit](http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) <http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/>
 
-### Rotar documentos<a id="orgheadline60"></a>
+### Rotar documentos<a id="orgheadline59"></a>
 
 Puedes rotar por completo un *PDF* o páginas determinadas, en los puntos cardinales elegidos. Por ejemplo, rotar una página 90 grados en el sentido de las agujas del reloj:
 
@@ -760,7 +751,7 @@ Las opciones son:
 
 `left`, `right` and `down` hacen ajustes relativos a la rotación de la páginas.
 
-### Dividir un PDF en varios<a id="orgheadline61"></a>
+### Dividir un PDF en varios<a id="orgheadline60"></a>
 
 Si queremos dividir (*split*) un *PDF* muy largo en varios documentos *PDF*, podemos utilizar la opción `burst`
 
@@ -768,7 +759,7 @@ Si queremos dividir (*split*) un *PDF* muy largo en varios documentos *PDF*, pod
 
 Lo que dará como resultado tantos archivos *PDF* como páginas tenía el documento.
 
-## ImageMagick<a id="orgheadline63"></a>
+## ImageMagick<a id="orgheadline62"></a>
 
 *Imagemagick* es un conjunto de herramientas en consola para modificar y tratar imágenes, bien en el momento o bien integrado en un *script* en *bash*.
 Lo podemos utilizar para convertir imágenes en *PDF* y así manipular el documento como *PDF*. Utiliza el comando `convert`
@@ -793,7 +784,7 @@ También podríamos hacer la conversión en un nuevo directorio:
 
 Con la opción `-colorspace Gray` convertimos una imagen de color a escala de grises.
 
-## Poppler-utils pdftoppm<a id="orgheadline64"></a>
+## Poppler-utils pdftoppm<a id="orgheadline63"></a>
 
 Con las utilidades *poppler-utils* manipulamos *PDF*. Su paquete *pdftoppm* permite convertir *PDF* a imágenes en formato *ppm*, *png* o *jpg*.
 
@@ -807,7 +798,7 @@ Para imprimir solo una página, se utiliza la opción `singlefile`, y con la opc
 
     pdftoppm -f N -singlefile -png archivo.pdf prefijo
 
-## pdfcrop<a id="orgheadline65"></a>
+## pdfcrop<a id="orgheadline64"></a>
 
 <https://sourceforge.net/projects/pdfcrop/files/>
 texlive-extra-utils
@@ -822,32 +813,32 @@ Automatizar archivos `PDF` de un directorio:
       pdfcrop --margins 5 "${FILE}" "${FILE-cropped}"
     done
 
-## pdfjam<a id="orgheadline66"></a>
+## pdfjam<a id="orgheadline65"></a>
 
 Utilidad en línea de comandos para el paquete de LaTeX *pdfpages*
 
     pdfjam --keepinfo --trim "15mm 15mm 30mm 60mm" --clip true --suffix "cropped" 6_Abengoa.pdf
 
-## PDF-Shuffler<a id="orgheadline67"></a>
+## PDF-Shuffler<a id="orgheadline66"></a>
 
 Aplicación gráfica (GTK) para Linux que ayuda a pegar, dividir, rotar o reorganizar las páginas a través de una interfaz gráfica. Es un frontend para *python-pyPdf*
 
 <https://sourceforge.net/projects/pdfshuffler/>
 
-## Briss<a id="orgheadline68"></a>
+## Briss<a id="orgheadline67"></a>
 
 Aplicación multiplataforma (*Linux*, *Windows* y *Mac OSX* para recortar archivos PDF. Una simple interaz nos permite definir la región.
 
 <http://briss.sourceforge.net/>
 <https://sourceforge.net/projects/briss/files/>
 
-## qpdf<a id="orgheadline69"></a>
+## qpdf<a id="orgheadline68"></a>
 
 Para desencriptar un *PDF* encriptado
 
     qpdf --password='' --decrypt archivo-original.pdf archivo-desencriptado.pdf
 
-## pyPdf<a id="orgheadline70"></a>
+## pyPdf<a id="orgheadline69"></a>
 
 Receta de Python
 <http://code.activestate.com/recipes/576837-crop-pdf-file-with-pypdf/>
@@ -855,7 +846,7 @@ python-pypdf2 - Pure-Python library built as a PDF toolkit (Python 2)
 python3-pypdf2 - Pure-Python library built as a PDF toolkit (Python 3)
 python-pypdf - PDF toolkit implemented solely in Python
 
-## Rmagick<a id="orgheadline71"></a>
+## Rmagick<a id="orgheadline70"></a>
 
 -   [Rmagick](http://rmagick.rubyforge.org/portfolio.html) es otra herramienta que recomiendan en el artículo de ProPublica para trabajar con imágenes desde la consola
 -   También permite realizar dibujos en 2D.
@@ -864,7 +855,7 @@ python-pypdf - PDF toolkit implemented solely in Python
 -   Efectos especiales: <http://rmagick.rubyforge.org/portfolio2.html>
 -   Repositorio en GitHub: <http://github.com/rmagick/rmagick>
 
-## PDF Split and Merge<a id="orgheadline72"></a>
+## PDF Split and Merge<a id="orgheadline71"></a>
 
 -   Si nos da un poco de respeto o no podemos acceder a una línea de comandos, podemos contar con [PDF Split and Merge](http://sourceforge.net/projects/pdfsam/%0A)
 -   Se trata de una herramienta en modo gráfico (y también en línea de comandos) para separar, juntar, mezclar y rotar *PDF*.
@@ -877,7 +868,7 @@ python-pypdf - PDF toolkit implemented solely in Python
     -   Mezclar dos documentos *PDF*, componiendo uno nuevo que alterne una página de cada.
     -   Componer visualmente un nuevo *PDF* arrastrando páginas de otros *PDF*.
 
-## Herramientas Web<a id="orgheadline73"></a>
+## Herramientas Web<a id="orgheadline72"></a>
 
 -   Zamzar, Cometdocs y Smallpdf son servicios web online.
 -   Por tanto, el documento deja de estar en tu equipo y pasa por Inet hasta sus servidores.
@@ -886,7 +877,7 @@ python-pypdf - PDF toolkit implemented solely in Python
 -   [Cometdocs](http://www.cometdocs.com/) es otro servicio web para realizar conversiones aunque también funciona como servicio de almacenamiento y para compartir archivos. Dispone de una versión escritorio para *Windows* e *iOS*. También dispone de una API como servicio de pago.
 -   [smallpdf](http://smallpdf.com/) es otro servicio web que permite manipular y convertir *PDF*
 
-## Tika<a id="orgheadline74"></a>
+## Tika<a id="orgheadline73"></a>
 
 [OKFN Labs](http://okfnlabs.org) tiene en fase beta un [servicio web](http://okfnlabs.org/blog/2015/02/21/documents-to-text.html) que permite convertir un gran número de tipos de archivo a `TXT`.
 
@@ -904,7 +895,7 @@ Si queremos guardarlo automáticamente en una archivo de texto para facilitar su
 -   Ha creado una imagen *docker* por si quieres replicarlo en tu [propio servidor](https://registry.hub.docker.com/u/mattfullerton/tika-tesseract-docker/%0A)
 -   Y también puedes construirla desde [GitHub](https://github.com/mattfullerton/tika-tesseract-docker)
 
-## Good Tables<a id="orgheadline75"></a>
+## Good Tables<a id="orgheadline74"></a>
 
 -   *Good Tables* es otro proyecto de [OKFNLabs](http://okfnlabs.org) que consiste en un paquete *Python* para validar datos tabulares.
 -   Puede funcionar con simples *CSV* o en una tubería de procesos *ETL*.
@@ -912,7 +903,7 @@ Si queremos guardarlo automáticamente en una archivo de texto para facilitar su
 -   Artículo sobre Good Tables, <http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html>
 -   Read the Docs, <https://goodtables.readthedocs.org/en/latest/>
 
-# Un caso singular: ProPublica<a id="orgheadline79"></a>
+# Un caso singular: ProPublica<a id="orgheadline78"></a>
 
 -   [ProPublica](http://propublica.org/) realiza grandes investigaciones de periodismo de datos.
 -   Y tanto o más importante: lo documentan.
@@ -922,7 +913,7 @@ Si queremos guardarlo automáticamente en una archivo de texto para facilitar su
     -   [Tratamiento de imágenes](http://www.propublica.org/nerds/item/image-to-text-ocr-and-imagemagick)
     -   [PDF scraping](http://www.propublica.org/nerds/item/turning-pdfs-to-text-doc-dollars-guide)
 
-## El proceso<a id="orgheadline77"></a>
+## El proceso<a id="orgheadline76"></a>
 
 Ante una tabla de datos en una imagen:
 
@@ -950,16 +941,16 @@ Ante una tabla de datos en una imagen:
 
 1.  Limpieza de los datos, ya que *Tesseract* puede equivocarse en caracteres similares, como por ejemplo `0` de cero y `O` de o mayúscula. Por lo que probablemente no podamos dejar de hacer una comprobación manual, si bien en este proceso podemos implicar a más personas, bien a través de las citadas *Crowdcrafting* o *mTurk*. En este sentido, ProPublica utilizó *mTurk* y realizó esta [guía](http://www.propublica.org/article/propublicas-guide-to-mechanical-turk).
 
-## PDFTables<a id="orgheadline78"></a>
+## PDFTables<a id="orgheadline77"></a>
 
 Servicio web creado por ScraperWiki, un servicio de *web scraping*, para extraer tablas de PDFs. Requiere crearse un usuario. Puedes descargar los resultados a través del navegador. Advierten que si usas muchos documentos, tendrás que convertirte en usuario de pago.
 <https://pdftables.com/>
 
-# OCR<a id="orgheadline82"></a>
+# OCR<a id="orgheadline81"></a>
 
 El reconocimiento óptico de caracteres *OCR* (por sus siglas en inglés *Optical Character Recognition*) nos permite convertir imágenes que contienen texto en documentos de texto gracias a algoritmos automáticos que realizan ese reconocimiento.
 
-## Google Drive<a id="orgheadline80"></a>
+## Google Drive<a id="orgheadline79"></a>
 
 -   Google Drive realiza OCR sobre imágenes individuales en formato *jpg*, *png* o *gif* pero también en documentos *PDF* de una o más páginas
 -   Google recomienda ciertas pautas para el uso de OCR:
@@ -973,7 +964,7 @@ El reconocimiento óptico de caracteres *OCR* (por sus siglas en inglés *Optica
 -   *Google OCR* pretende mantener el formato básico del texto, como son las negritas o las itálicas, el tamaño y el tipo de fuente y los saltos de línea, pero reconocen que detectar estos elementos es complicado y no siempre lo consiguen.
 -   Otros contenidos estructurados como listas numeradas, listados estructurados, tablas, columnas de texto, pies de página y notas finales es probable que no sean reconocidos.
 
-## Tesseract-ocr<a id="orgheadline81"></a>
+## Tesseract-ocr<a id="orgheadline80"></a>
 
 -   [Tesseract](https://github.com/tesseract-ocr) se anuncia como las más completa y precisa solución de código abierto disponible para el reconocimiento óptico de caracteres.
 -   Combinado con la librería de procesamiento de imágenes *Leptonica*, lee varios formatos de imagen y convierte texto de más de sesenta idiomas.
@@ -1010,7 +1001,7 @@ El listado completo lo puedes encontrar en <https://tesseract-ocr.googlecode.com
 -   El manual completo con las distintas opciones y argumentos de entrada y salida está disponible en <https://tesseract-ocr.googlecode.com/svn/trunk/doc/tesseract.1.html>
 -   Tesseract-ocr, <https://code.google.com/p/tesseract-ocr/>
 
-# Referencias bibliográficas     :OK:<a id="orgheadline83"></a>
+# Referencias bibliográficas     :OK:<a id="orgheadline82"></a>
 
 -   Aristarain, Manuel & Tigas, Mike & Merril, Jeremy B. (2014) *Scraping PDFs with Tabula*. URL: <https://s3.amazonaws.com/media.miketigas.com/files/20140627/20140627-tabula-IRE2014-withnotes.pdf>
 
@@ -1030,7 +1021,7 @@ El listado completo lo puedes encontrar en <https://tesseract-ocr.googlecode.com
 
 -   Schoolofdata, (2014) *Obteniendo datos de los PDF*. Web: School of Data. URL: <http://es.schoolofdata.org/obteniendo-datos-de-los-pdfs/>
 
-# Manuales<a id="orgheadline84"></a>
+# Manuales<a id="orgheadline83"></a>
 
 -   Cómo utilizar *Google OCR*,  <https://www.youtube.com/watch?v=DPJJON26Do4>
 -   Introducción al scraping de *PDF*, <http://www.irekia.euskadi.eus/es/news/11703-introduccion-google-refine-curso-periodismo-datos>
